@@ -8,12 +8,6 @@
 #include "Person.h"
 #include "MixingGroups.h"
 
-// .01 workgroups
-// .03 elementary
-// .008 middle
-// .01 high
-// .0
-
 using namespace std;
 
 void displayTheNumberOfScrubs(int x);
@@ -24,32 +18,6 @@ void displayTheNumberOfSymptomaticFeverScrubs(int x);
 void displayTheNumberOfSymptomaticBleedingScrubs(int x);
 void displayTheNumberOfDeadScrubs(int x);
 void displayTheNewPopulation(int x);
-
-
-///Store probabilities within specific mixing groups and add those probabilities to each person populating them.
-
-///Certain risk of illness will vary based on jobs.
-
-///Start day count
-
-///Start updating status of each person as each day progress as the virus gets introduced
-
-///For family mixing groups, get number of children and number of adults and then calculate probability for infectiousness based off of their respective probabilities
-
-
-
-///Traverse each person in each mixing group
-
-///Remove all person pointers that are dead
-
-/// Expose 1 MG -> update status and inform MGs -> Change of status -> MGs compute score -> Person computes 1-Pi -> Change Status
-
-///Make <MG>, Make <People>, Expose 1 MG, <MG> informs <Persons> change of Status
-
-///Time Loop: {Each person informs all of their mixing groups of the change in status, Each mixing group computes score (1-p)^n, Each person computes 1-Pi(Scores) -roll dice}
-
-///Person chance of getting infected: 1-[(.98)(number of people exposed to and their respective probabilities)]
-
 
 int main()
 {
@@ -170,7 +138,6 @@ int main()
         switch (p.Getage())                                             /// Add students to the school respective to their age
         {
         case 1 ... 11:
-            //newPerson.groups.GetGroupType("Daddy Day Care");
             for(int i=0; i < numberOfElemtarySchools(*gptr); i++)
             {
                 mitr++;
@@ -180,7 +147,6 @@ int main()
             break;
 
         case 12 ... 14:
-            //newPerson.groups.GetGroupType("Flip a Duh Skip a Duh Middle School");
 
             for(int i=0; i< numberOfMiddleSchools(*gptr); i++)
             {
@@ -190,7 +156,6 @@ int main()
             p.addGroups(*mitr);
             break;
         case 15 ... 17:
-            //newPerson.groups.GetGroupType("Ta Peeyuke High School");
             for(int i=0; i< numberOfHighSchools(*gptr); i++)
             {
                 mitr++;
@@ -199,7 +164,6 @@ int main()
             p.addGroups(*mitr);
             break;
         case 18 ... 24:
-            //newPerson.groups.GetGroupType("Trump University");
             if(numberOfUniversities(*gptr) == 1)
             {
                 for(int i=0; i< 15; i++)
@@ -399,10 +363,6 @@ int main()
 
     }
 
-
-    ///866-820-8785
-
-
     return 0;
 }
 
@@ -448,16 +408,4 @@ void displayTheNewPopulation(int x)
     cout << "¡El nuevo número de idiotas en tu mundo repulsivo es " << x << "!" << endl;
 
 }
-
-
-
-///Data File needs, total population, total exposed, total infected, and total dead to be updated and outputed for each day.
-/*
-void SchoolMixingGroup(MixingGroups& personGroup, list<MixingGroups> schoolGroup, ) ///Add person to their designated school
-{
-
-}
-*/
-
-
 
