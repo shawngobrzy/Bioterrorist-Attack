@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1677896105 source:c:\users\bluek\onedrive\desktop\cs 361\final\project1_cs_sbrya025\mixinggroups.cpp
+	"MixingGroups.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<list>
+	<cstdlib>
+
+1677895711 c:\users\bluek\onedrive\desktop\cs 361\final\project1_cs_sbrya025\mixinggroups.h
+	<list>
+	<string>
+	"Person.h"
+	"FowardDeclaration.h"
+
+1677954808 c:\users\bluek\onedrive\desktop\cs 361\final\project1_cs_sbrya025\person.h
+	"MixingGroups.h"
+	"FowardDeclaration.h"
+	<list>
+	<random>
+
+1676496785 c:\users\bluek\onedrive\desktop\cs 361\final\project1_cs_sbrya025\fowarddeclaration.h
+
+1677954808 source:c:\users\bluek\onedrive\desktop\cs 361\final\project1_cs_sbrya025\person.cpp
+	"Person.h"
+	"MixingGroups.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<list>
+	<cstdlib>
+
+1677955153 source:c:\users\bluek\onedrive\desktop\cs 361\final\project1_cs_sbrya025\main.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<list>
+	<cstdlib>
+	<fstream>
+	"Person.h"
+	"MixingGroups.h"
+

@@ -1,0 +1,7 @@
+End of day 45:
+The total number of people that were exposed after day 45: 19
+The total number of people that were infected after day 45: 1856
+The total number of people that were symptomatic (Fever) after day 45: 1147
+The total number of people that were symptomatic (Bleeding) after day 45: 4887
+The total number of people that were dead after day 45: 2101
+The current population at the end of day 45: -2268
